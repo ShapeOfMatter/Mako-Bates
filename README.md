@@ -1,9 +1,3 @@
-# HelloWorld
-i'm a professional who can git
+At this time there is no further information in this location.
 
-	This is a code block. Let's say it's SQL?
-
-And I'm gonna do a list of foods i like:
-- apples
-- pie
-- burbon
+You may reach out to Mako via whatever channels he has given you.
