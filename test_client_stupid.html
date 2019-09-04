@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The FOTR Shim</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+      const parent = window.parent;
+      const pipe = new MessageChannel();
+      const mine = pipe.port1;
+      const theirs = pipe.port2;
+      mine.onmessage = (e)=>{
+          const newPort = e.data.port;
+          const request = e.data.resource;
+          const response = "555"
+          console.log(`Receipt requested for [${request.method}]${request.url}; retruning ${response}`)
+          newPort.postMessage(response);
+          newPort.close();
+      };
+      parent.postMessage(theirs, '*', [theirs]);
+    </script>
+  </head>
+  <body</body>
+</html>
+
