@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The FOTR Shim</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        const indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB || window.shimIndexedDB;
+        
+        const defaultClient = window.location.href.split('#')[1] || '';
+        
+        const indexedDBPromise = (request)=>{
+            return new Promise(
+                (resolve, reject)=>{
+                    request.onsuccess = (e)=>{
+                        resolve(e.target.result);
+                    };
+                    request.onerror = (e)=>{
+                        reject(e.target.error);
+                    };
+                });
+        };
+
+        const openDB = indexedDB.open("FOTR", 0);
+        openDB.onupgradeneeded = (e)=>{
+            e.target.result.createObjectStore("chosen_clients");
+        };
+        const clientLoaded = indexedDBPromise(openDB)
+            .then(
+                (db)=>{
+                    const tx = db.transaction("chosen_clients", "readonly");
+                    tx.oncomplete = ()=>{
+                        db.close();
+                    };
+                    return indexedDBPromise(tx.objectStore("chosen_clients").getAll());
+                }, 
+                (reason)=>{
+                    //handle open-db error
+                })
+            .then(
+                (db_result)=>{
+                    window.parent.postMessage(db_result.uri || defaultClient);
+                }, 
+                (reason)=>{
+                    //handle db-read error
+                });
+
+    </script>
+  </head>
+  <body</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
