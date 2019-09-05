@@ -13,7 +13,15 @@
     </script>
     <script>
         _page_loaded = ()=>{
-            window.FOTR.fetch
+            window.FOTR.fetch(
+                'http://maine-climate-protectors.org/uploads/Maineyouth_DEP.jpg',
+                ).then((response)=>{
+                    return response.blob();
+                }).then((b)=>{
+                    const i = window.document.createElement('img');
+                    i.src = URL.createObjectURL(b);
+                    document.getElementById("testTarget").appendChild(i);
+                });
         };
     </script>
   </head>
