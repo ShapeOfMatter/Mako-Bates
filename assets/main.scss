@@ -1,0 +1,20 @@
+---
+---
+
+$primary-color: {{ site.site_colors.primary_background }};
+$light-color: {{ site.site_colors.light_background }};
+$dark-color: {{ site.site_colors.dark_background }};
+
+$font-color: {{ site.site_colors.primary_font }};
+$secondary-font-color: {{ site.site_colors.secondary_font }};
+$tertiary-font-color: {{ site.site_colors.tertiary_font }};
+
+$heading-font: 'Comfortaa', 'American Typewriter', 'sans-serif';
+$content-font: 'Dosis', 'sans-serif';
+
+$blog_side_bar_threshold: {{ site.side_bar.posts.vw_threshold }}px;
+$uploads_side_bar_threshold: {{ site.side_bar.uploads.vw_threshold }}px;
+
+@import "master";
+@import "busy";
+@import "contents";

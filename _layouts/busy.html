@@ -1,0 +1,40 @@
+---
+layout: master
+---
+
+<div id="blog-side-bar">
+  <div id="blog-side-inner">
+    <h5><a href="{{ "posts" | relative_url }}">recent posts</a></h5>
+    <ul>
+      {% for post in site.posts limit:site.side_bar.posts.quantity %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<div id="uploads-side-bar">
+  <div id="uploads-side-inner">
+    <h5><a href="{{ "gallery" | relative_url }}">recent uploads</a></h5>
+    <ul>
+      {% assign gallery_collection = site.collections | where: 'label', 'gallery' | first %}
+      {% assign uploads = (gallery_collection.uploads | sort:"date") | reverse %}
+      {% for upload in uploads | limit:site.side_bar.uploads.quantity %}
+        {% assign extension = upload.file | split:'.' | last | downcase %}
+        {% case extension %}
+        {% when "jpg" or "jpeg" or "png" or "gif" or "svg" %}
+          <li><a href="{{ upload.file | relative_url }}" target="_blank">
+            <img src="{{ upload.file | relative_url }}" class="side_bar_image">
+          </a></li>
+        {% else %}
+          <li><a href="{{ upload.file | relative_url }}" target="_blank">
+            {{ upload.name }}
+          </a></li>
+        {% endcase %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div id="page_contents">
+  {{ content }}
+</div>

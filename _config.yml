@@ -1,1 +1,134 @@
-theme: jekyll-theme-midnight
+---
+title: Maine Climate Protectors Petition
+timezone: America/New_York
+collections:
+  gallery:
+    title: Gallery
+    output: true
+    uploads:
+    - file: "/uploads/20171030_090303.jpg"
+      name: Some waves on Monhegan
+      date: 2017-12-20 05:00:00.000000000 Z
+    - file: "/uploads/2d4bee9317294f87e54c5f855be5f138--humboldt-county-dairy.jpg"
+      name: A goat I found online.
+      date: 2017-12-19 05:00:00.000000000 Z
+    - file: "/uploads/Jan%2024%20Flyer-FINAL.docx"
+      name: Print Flyer for Jan 24
+      date: 2018-01-15 05:00:00.000000000 Z
+    - file: "/uploads/MCP%20painted%20banner.jpg"
+      name: The painted Maine Climate Protectors banner
+      date: 2018-01-16 05:00:00.000000000 Z
+    - file: "/uploads/mediaadvisory_petitiondrop_1_22.pdf"
+      name: Media Advisory for Jan 24th
+      date: 2018-01-22 05:00:00.000000000 Z
+    - file: "/uploads/ME.FB.EventPhoto.png"
+      name: AART Youth Gets Ready
+      date: 2018-01-23 05:00:00.000000000 Z
+    - file: "/uploads/Petition%201-23-18%20Final%20wAppendix.zip"
+      name: The Petition (final, zip with appendices)
+      date: 2018-01-24 05:00:00.000000000 Z
+    - file: "/uploads/Petition%201-23-18%20FINAL.pdf"
+      name: The Petition (final, pdf)
+      date: 2018-01-24 05:00:00.000000000 Z
+    - file: "/uploads/IMG_0964-fd18b2.jpg"
+      name: The petition is handed off to the DEP
+      date: 2018-01-24 21:00:00.000000000 Z
+    - file: "/uploads/2018-01-24%2014.37.26.jpg"
+      name: The first speaker
+      date: 2018-01-25 05:00:00.000000000 Z
+    - file: "/uploads/2018-01-24%2014.32.24.jpg"
+      name: The gathered crowd
+      date: 2018-01-25 05:00:00.000000000 Z
+    - file: "/uploads/Climate%20Change%20II%20-%20Phelps%20Turner.jpg"
+      name: Speaker at the celebration
+      date: 2018-01-25 05:00:00.000000000 Z
+    - file: "/uploads/2018-01-24%2014.35.58.jpg"
+      name: The MCs at the celebration
+      date: 2018-01-24 05:00:00.000000000 Z
+    - file: "/uploads/2018-01-24%2014.36.05.jpg"
+      name: The crowd at the celebration
+      date: 2018-01-24 05:00:00.000000000 Z
+    - file: "/uploads/2018-01-24%2014.37.26.jpg"
+      name: A speaker at the celebration
+      date: 2018-01-24 05:00:00.000000000 Z
+    - file: "/uploads/2018-01-24%2014.43.52.jpg"
+      name: A speaker at the celebration
+      date: 2018-01-24 05:00:00.000000000 Z
+    - file: "/uploads/2018-01-24%2014.50.43.jpg"
+      name: A speaker at the celebration
+      date: 2018-01-24 05:00:00.000000000 Z
+    - file: "/uploads/2018-01-24%2014.48.06.jpg"
+      name: A speaker at the celebration
+      date: 2018-01-24 05:00:00.000000000 Z
+    - file: "/uploads/2018-01-24%2014.53.24.jpg"
+      name: A speaker at the celebration
+      date: 2018-01-24 05:00:00.000000000 Z
+    - file: "/uploads/2018-01-24%2014.57.16.jpg"
+      name: A speaker at the celebration
+      date: 2018-01-24 05:00:00.000000000 Z
+    - file: "/uploads/2018-01-24%2014.59.59.jpg"
+      name: A speaker at the celebration
+      date: 2018-01-24 05:00:00.000000000 Z
+    - file: "/uploads/2018-01-24%2015.03.50.jpg"
+      name: Beth Valentine talks about the petition she was in charge of writing
+      date: 2018-01-24 05:00:00.000000000 Z
+    - file: "/uploads/2018-01-24%2015.09.17.jpg"
+      name: Charles "Chuck" Spanger speaks at the celebration
+      date: 2018-01-24 05:00:00.000000000 Z
+    - file: "/uploads/hunter.png"
+      name: A speaker at the celebration
+      date: 2018-01-24 05:00:00.000000000 Z
+    - file: "/uploads/plastics.png"
+      name: A speaker at the celebration
+      date: 2018-01-24 05:00:00.000000000 Z
+    - file: "/uploads/Invitation%20to%20Speakers.pdf"
+      name: Testify at a DEP Hearing!
+      date: 2018-04-29 04:00:00.000000000 Z
+    - file: "/uploads/Hunter_Lance_Ruthie_Thomas_KHSbeforedep.jpg"
+      name: Hunter, Lance, Ruthie and Thomas meet at their school to carpool to the
+        hearing.
+      date: 2018-05-15 04:00:00.000000000 Z
+    - file: "/uploads/Hunter_speakingdep518.jpg"
+      name: Hunter addresses the panel.
+      date: 2018-05-15 04:00:00.000000000 Z
+    - file: "/uploads/Maineyouth_DEP.jpg"
+      name: Anna, Devyn, Asfia, Thomas, Lance, Hunter, and Ruth gather outside the
+        DEP Response Training Room.
+      date: 2018-05-15 04:00:00.000000000 Z
+    - file: "/uploads/RyanOleary_MYEAfounder_dep2018.jpg"
+      name: MYEA founder Ryand O'Leary addresses the panel.
+      date: 2018-05-15 04:00:00.000000000 Z
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+permalink: pretty
+side_bar:
+  posts:
+    vw_threshold: 1000
+    quantity: 5
+  uploads:
+    vw_threshold: 1000
+    quantity: 5
+site_colors:
+  primary_background: "#20343b"
+  light_background: "#32515c"
+  dark_background: "#17252a"
+  primary_font: "#ffffff"
+  secondary_font: "#e9f9c9"
+  tertiary_font: "#f2fce0"
+contact_email: maineclimateprotectors@gmail.com

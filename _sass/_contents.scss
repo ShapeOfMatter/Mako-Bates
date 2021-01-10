@@ -1,0 +1,44 @@
+#page_contents {
+  padding: 1vw 5vw;
+  margin: 0px 20vw 20px 20vw;
+  background-color: $dark-color;
+  @media (max-width:600px) {
+    margin: 0px 2vw 20px 2vw;
+  }
+  font-family: $content-font;
+  h1 {
+    font-size: 150%;
+    font-weight: bolder;
+    color: $tertiary-font-color;
+    margin: 2vw 0vw 2vw 0vw;
+  }
+  p, .paragraph {
+    padding: 0.5em;
+    line-height: 1.8;
+    &:first-line{
+      font-weight: bolder;
+    }
+  }
+  a {
+    color: inherit;
+    font-weight: bolder;
+    &:visited{
+      color: darken($font-color, 15%);
+    }
+    &:hover, &:active{
+      background-color: $light-color;
+    }
+  }
+  img {
+      max-width: 100%;
+      object-fit: cover;
+  }
+  .upload_name {
+    margin-right: 1em;
+  }
+  .upload_date {
+    font-weight: lighter;
+    text-decoration: none;
+    display: inline-block;
+  }
+}

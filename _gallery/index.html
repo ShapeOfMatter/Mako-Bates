@@ -1,0 +1,23 @@
+---
+title: Gallery
+date: 2017-12-25 19:41:00 -05:00
+permalink: "/gallery/index.html"
+layout: busy
+---
+
+{% assign gallery_collection = site.collections | where: 'label', 'gallery' | first %}
+{% assign uploads = (gallery_collection.uploads | sort:"date") | reverse %}
+{% for upload in uploads %}
+  {% assign extension = upload.file | split:'.' | last | downcase %}
+  {% case extension %}
+  {% when "jpg" or "jpeg" or "png" or "gif" or "svg" %}
+    <div class="paragraph"><a href="{{ upload.file | relative_url }}" target="_blank">
+      <div><span class="upload_name">{{ upload.name }}</span><span class="upload_date">{{ upload.date | date:"%D" }}</span></div>
+      <div><img alt="{{ upload.name }}" src="{{ upload.file | relative_url }}"></div>
+    </a></div>
+  {% else %}
+    <div class="paragraph"><a href="{{ upload.file | relative_url }}" target="_blank">
+      <div><span class="upload_name">{{ upload.name }}</span><span class="upload_date">{{ upload.date | date:"%D" }}</span></div>
+    </a></div>
+  {% endcase %}
+{% endfor %}
