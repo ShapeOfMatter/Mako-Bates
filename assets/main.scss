@@ -9,8 +9,8 @@ $font-color: {{ site.site_colors.primary_font }};
 $secondary-font-color: {{ site.site_colors.secondary_font }};
 $tertiary-font-color: {{ site.site_colors.tertiary_font }};
 
-$heading-font: 'Comfortaa', 'American Typewriter', 'sans-serif';
-$content-font: 'Dosis', 'sans-serif';
+$heading-font: 'sans-serif';
+$content-font: 'sans-serif';
 
 $blog_side_bar_threshold: {{ site.side_bar.posts.vw_threshold }}px;
 $uploads_side_bar_threshold: {{ site.side_bar.uploads.vw_threshold }}px;
