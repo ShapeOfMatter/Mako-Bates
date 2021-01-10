@@ -30,10 +30,10 @@ side_bar:
     vw_threshold: 1000
     quantity: 5
 site_colors:
-  primary_background: "#20343b"
-  light_background: "#32515c"
-  dark_background: "#17252a"
-  primary_font: "#ffffff"
+  primary_background: "#442515"
+  light_background: "#4d3324"
+  dark_background: "#261515"
+  primary_font: "#ffffdd"
   secondary_font: "#e9f9c9"
   tertiary_font: "#f2fce0"
 contact_email: withheld@for.now
