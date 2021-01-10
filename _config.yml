@@ -1,6 +1,5 @@
 ---
 title: Irving Street Functionality
-description: This is supposed to be a blog.
 timezone: America/New_York
 collections:
   posts:
@@ -21,6 +20,7 @@ defaults:
     type: pages
   values:
     layout: page
+description: This is supposed to be a blog.
 permalink: pretty
 side_bar:
   posts:
@@ -37,4 +37,3 @@ site_colors:
   secondary_font: "#e9f9c9"
   tertiary_font: "#f2fce0"
 contact_email: withheld@for.now
-
