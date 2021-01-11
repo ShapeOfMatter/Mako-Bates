@@ -1,8 +1,8 @@
 ---
 title: What's in my bin
-description: Cataloging various minor things I've added to my OS. 
+date: 2021-01-10 00:00:00 -05:00
+description: Cataloging various minor things I've added to my OS.
 ---
-
 
 # The actual /bin directory
 
