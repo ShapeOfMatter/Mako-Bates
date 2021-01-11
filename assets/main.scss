@@ -16,5 +16,5 @@ $blog_side_bar_threshold: {{ site.side_bar.posts.vw_threshold }}px;
 $uploads_side_bar_threshold: {{ site.side_bar.uploads.vw_threshold }}px;
 
 @import "master";
-@import "busy";
+@import "sidebar";
 @import "contents";
