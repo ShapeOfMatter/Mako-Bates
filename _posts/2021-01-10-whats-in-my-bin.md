@@ -4,7 +4,7 @@ date: 2021-01-10 00:00:00 -05:00
 description: Cataloging various minor things I've added to my OS.
 ---
 
-# The actual /bin directory
+{{ include section_header c="The actual /bin directory" id="bin-files" }}
 
 # The .bashrc
 
