@@ -6,7 +6,7 @@ description: Cataloging various minor things I've added to my OS.
 
 {{ include section_header c="The actual /bin directory" id="bin-files" }}
 
-I don't see why this isn't building!
+I don't see why this isn't building! oh i get it.
 
 # The .bashrc
 
