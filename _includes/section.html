@@ -1,2 +1,2 @@
 {% comment %}<h{{ include.l | default: 2 }}>{{ include.c }}<a href="{{ include.id | default: include.c | prepend "#" | replace " " "-" | replace "'" "-" | replace "--" "-" | absolute_url }}" title="permalink">¶</a></h{{ include.l | default: 2 }}>{% endcomment %}
-<h{{ include.l | default: 2 }} id="{{ include.id | default: include.c }}">{{ include.c }}<a href="#{{ include.id }}" title="permalink" class="section_heading">¶</a></h{{ include.l | default: 2 }}>
+{% capture section_header_id %}{{ include.id | default: include.c }}{% endcapture %}<h{{ include.l | default: 2 }} id="{{ section_header_id }}">{{ include.c }}<a href="{{ section_header_id | prepend '#' | absolute_url}}" title="permalink" class="section_heading">¶</a></h{{ include.l | default: 2 }}>
