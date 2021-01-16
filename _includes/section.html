@@ -1,1 +1,1 @@
-<h{{ include.l | default: 2 }}>{{ include.c }}<a href="{{ include.id | default: include.c | prepend "#" | replace " " "-" | replace "'" "-" | replace "--" "-" | absolute_url }}" title="permalink">¶</a></h{{ include.l | default: 2 }}>
+{% comment %}<h{{ include.l | default: 2 }}>{{ include.c }}<a href="{{ include.id | default: include.c | prepend "#" | replace " " "-" | replace "'" "-" | replace "--" "-" | absolute_url }}" title="permalink">¶</a></h{{ include.l | default: 2 }}>{% endcomment %}<h2>{{ include.c }}<a href="#" title="permalink">¶</a></h2>
