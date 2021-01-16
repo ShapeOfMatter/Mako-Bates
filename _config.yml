@@ -20,8 +20,6 @@ defaults:
     type: pages
   values:
     layout: page
-plugins:
-- jekyll-regex-replace
 description: This is supposed to be a blog.
 permalink: pretty
 side_bar:
