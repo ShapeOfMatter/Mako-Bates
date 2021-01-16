@@ -6,7 +6,7 @@ description: Cataloging various minor things I've added to my OS.
 
 {% include section.html c="The actual /bin directory" %}
 
-I don't see why this isn't building! oh i get it.nope still broke? asdfasdf
+some stuff is less broke.
 
 # The .bashrc
 
