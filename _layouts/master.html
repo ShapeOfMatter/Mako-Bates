@@ -23,7 +23,8 @@
       <div id="blog-side-inner">
         <h5><a href="{{ "posts" | relative_url }}">recent posts</a></h5>
         <ul>
-          {% for post in site.posts limit:site.side_bar.posts.quantity %}
+          {% assign posts = site.posts | concat: site.papers | sort: "date" | reverse %}
+          {% for post in posts | limit:site.side_bar.posts.quantity %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
           {% endfor %}
         </ul>
