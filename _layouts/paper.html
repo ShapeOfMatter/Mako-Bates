@@ -1,0 +1,14 @@
+---
+layout: post
+---
+
+<table class="big-citation">
+  {% for line in page.citation %}
+  <tr class="citation-{{ line[0] }}">
+    <td class="key">{{ line[0] }}</td>
+    <td class="value">{{ line[1] }}</td>
+  </tr>
+  {% endfor %}
+</table> 
+
+{{ content }}
