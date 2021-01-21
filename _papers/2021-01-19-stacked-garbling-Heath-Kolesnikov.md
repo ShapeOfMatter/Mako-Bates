@@ -5,13 +5,16 @@ tags:
 - circuits
 - cryptography
 - papers
+citation:
+  author: David Heath and Vladimir Kolesnikov
+  title: Stacked Garbling: Garbled Circuit Proportional to Longest Execution Path
+  howpublished: Cryptology ePrint Archive, Report 2020/973
+  year: 2020
+  where: Georgia Institute of Technology, Atlanta, GA, USA
+
 ---
 
-> author = {David Heath and Vladimir Kolesnikov},  
-  title = {Stacked Garbling: Garbled Circuit Proportional to Longest Execution Path},  
-  howpublished = {Cryptology ePrint Archive, Report 2020/973},  
-  year = {2020},  
-  where = {Georgia Institute of Technology, Atlanta, GA, USA},  
+> ,  
 
 This paper outlines a strategy for reducing the size of the object that needs to be communicated from an if-else style branch in a Yao's Garbled Circut.
 The extra size-complexity from the two branch paths (only one of which will actually matter at run-time) is traded for computation-complexity (and some size-complexity that's O(n) w/r/to the number of inputs to the two branch paths; the authors assume this is small).
