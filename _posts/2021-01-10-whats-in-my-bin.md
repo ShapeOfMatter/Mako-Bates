@@ -36,7 +36,19 @@ I'll keep this running in a vim-split pane so I can check the error-output if an
 
 So far as I'm aware, this is totally specific to people running POP_OS on system-76 laptops. 
 
+On its own, the python script is just a convienent command for setting the color and brightness of the keyboard backlight.
+The assumption though is that you'll configure it to be run automatical at boot-time. 
+It only works if run as root, and because it's going to be run automatically _as root_, it's important that the file itself can only be written by root.
+Building this sanity check into the script was certianly a pain. 
 
+To create the systemd service to run it on boot:  
+
+- Create the service unit file. It goes in `/etc/systemd/system/`; I'm calling it `system76-kb-backlight.service`.
+Rather than calling the script directly, it should wrap it in systemd-cat, which manages logging.
+There's an example in a comment in the script-file.
+- Use `sudo systemctl daemon-reload` to tell systemd to check for new/updated service files.  
+- Use `systemctl status system76-kb-backlight.service` to check the task's status and see recent log messages from it.  
+- Use `sudo systemctl enable system76-kb-backlight.service` to tell systemd that the service should be started on every boot.
 
 
 # vim
