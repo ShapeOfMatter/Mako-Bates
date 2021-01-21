@@ -4,12 +4,6 @@ tags:
 - circuits
 - cryptography
 - papers
-citation:
-  author: David Heath and Vladimir Kolesnikov
-  title: Stacked Garbling: Garbled Circuit Proportional to Longest Execution Path
-  howpublished: Cryptology ePrint Archive, Report 2020/973
-  year: 2020
-  where: Georgia Institute of Technology, Atlanta, GA, USA
 date: 2021-01-19
 ---
 
