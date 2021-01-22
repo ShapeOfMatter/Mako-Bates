@@ -6,7 +6,6 @@ layout: none
 {%- for p in pages | where: "date" -%}
   {%- if p.date -%}
     {{ p.title | default: p.name }}
-    {{ p.date }}
     {{ p.url }}
     {{- p.content -}}
 
