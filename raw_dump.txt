@@ -6,4 +6,6 @@ layout: none
 {%- for p in pag | where: "date" -%}
   {{ p.title }}
   {{ p.url }}
+  {{- p.content -}}
+
 {% endfor %}
