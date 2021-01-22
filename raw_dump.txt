@@ -4,7 +4,7 @@ layout: none
 
 {%- assign pag = site.papers | concat: site.posts | sort: "date" | reverse -%}
 {%- for p in pag | where: "date" -%}
-  {{ p.title }}
+  {{ p.title | default: p.name }}
   {{ p.url }}
   {{- p.content -}}
 

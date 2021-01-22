@@ -24,7 +24,7 @@
         <h5><a href="{{ "posts" | relative_url }}">recent posts</a></h5>
         <ul>
           {% assign posts = site.posts | concat: site.papers | sort: "date" | reverse %}
-          {% for post in posts | limit:site.side_bar.posts.quantity %}
+          {% for post in posts | limit: site.side_bar.posts.quantity %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
           {% endfor %}
         </ul>
