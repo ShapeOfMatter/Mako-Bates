@@ -48,4 +48,4 @@ Thoughts:
 - They're explicitly relying on a Random Oracle assumption, but they mention that it might not actually be necessary. 
 - Is there any possibility of cutting out the extra computation cost?
 
-{{ page }}
+{{ page.url }} url
