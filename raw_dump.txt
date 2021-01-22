@@ -1,4 +1,5 @@
 ---
+layout: none
 ---
 
 {%- assign pag = site.papers | concat: site.posts | sort: "date" | reverse -%}
