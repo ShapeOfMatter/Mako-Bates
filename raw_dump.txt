@@ -2,7 +2,7 @@
 ---
 
 {%- assign pag = site.papers | concat: site.posts | sort: "date" | reverse -%}
-{%- for p in pag -%}
-
+{%- for p in pag | where: "date" -%}
+  {{ p.title }}
   {{ p.url }}
 {% endfor %}
