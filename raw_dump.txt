@@ -1,6 +1,4 @@
 ---
-layout: none
-permalink: /raw
 ---
 
 {%- assign pages = site.pages | concat: site.papers | concat: site.posts | where: "date" | sort: "date" | reverse -%}
