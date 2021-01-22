@@ -48,4 +48,16 @@ Thoughts:
 - They're explicitly relying on a Random Oracle assumption, but they mention that it might not actually be necessary. 
 - Is there any possibility of cutting out the extra computation cost?
 
-{{ page.url }} url
+{{ page.url }} urlg
+
+
+<table>
+  {% for pair in page %}
+  <tr>
+    <td>{{ pair[0] }}</td>
+    <td>{{ pair[1] }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+
