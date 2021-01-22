@@ -1,0 +1,11 @@
+---
+layout: none
+---
+
+{%- assign pages = site.pages | concat: site.papers | concat: site.posts | where: "date" | sort: "date" | reverse -%}
+{%- for p in pages -%}
+
+  {{ p.title | default: p.name }}
+  {{ p.url }}
+  {{- p.content -}}
+{% endfor %}
