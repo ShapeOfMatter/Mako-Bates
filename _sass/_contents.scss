@@ -13,10 +13,22 @@
     margin: 2vw 0vw 2vw 0vw;
   }
   p, .paragraph {
-    padding: 0.5em;
-    line-height: 1.8;
+    padding: 0.3em;
+    line-height: 1.5;
     &:first-line{
       font-weight: bolder;
+    }
+  }
+  li {
+    line-height: 1.3;
+    margin: 0.4em 0em;
+  }
+  .big-citation {
+    margin: 0em 2em 1em 6em;
+    border-collapse: collapse;
+    td {
+      border: 1px solid $primary-color;
+      padding: .2em;
     }
   }
   a {
