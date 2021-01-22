@@ -4,8 +4,11 @@ layout: none
 
 {%- assign pages = site.pages | concat: site.papers | concat: site.posts | sort: "date" -%}
 {%- for p in pages | where: "date" -%}
-  {{ p.title | default: p.name }}
-  {{ p.url }}
-  {{- p.content -}}
+  {%- if p.date -%}
+    {{ p.title | default: p.name }}
+    {{ p.date }}
+    {{ p.url }}
+    {{- p.content -}}
 
+  {%- endif -%}
 {% endfor %}
