@@ -47,3 +47,5 @@ Thoughts:
 - This can all be extended to branches with more than two paths. 
 - They're explicitly relying on a Random Oracle assumption, but they mention that it might not actually be necessary. 
 - Is there any possibility of cutting out the extra computation cost?
+
+{{ page }}
