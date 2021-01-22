@@ -2,9 +2,9 @@
 title: Stacked Garbling; David Heath and Vladimir Kolesnikov; 2020
 date: 2021-01-19
 tags:
-- circuits
-- cryptography
-- papers
+  - circuits
+  - cryptography
+  - papers
 citation:
   author: David Heath and Vladimir Kolesnikov
   title: Stacked Garbling: Garbled Circuit Proportional to Longest Execution Path
@@ -46,3 +46,4 @@ Thoughts:
 - "Mux" is short for "multiplex"; the noun form is "multiplexer", or "muxer". It's really hard to just write "the Mux does _x_", but that's what the authors call it.
 - This can all be extended to branches with more than two paths. 
 - They're explicitly relying on a Random Oracle assumption, but they mention that it might not actually be necessary. 
+- Is there any possibility of cutting out the extra computation cost?
