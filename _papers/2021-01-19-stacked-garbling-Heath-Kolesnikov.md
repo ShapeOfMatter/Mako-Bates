@@ -49,6 +49,10 @@ Thoughts:
 - Is there any possibility of cutting out the extra computation cost?
 
 {{ page.url }} urlg
+{{ page.title }} title
+{{ page.date }} date
+{{ page.id }} id
+{{ page.tags }} tags
 
 
 <table>
