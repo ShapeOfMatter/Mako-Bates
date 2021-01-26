@@ -1,6 +1,6 @@
 ---
 title: "Half Gates; Samee Zahur, Mike Rosulek, and David Evans"
-date: 2021-01-19
+date: 2021-01-25
 tags:
   - circuits
   - cryptography
