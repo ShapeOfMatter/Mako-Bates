@@ -23,7 +23,7 @@ There are several differences:
 - Symphony is mostly agnostic about the cryptographic primitives with which MPC opperations are carried out. 
 The authors seem to assume that one will use GMW or something like it, but claim that any MPC protocol would work
 (and the don't actually implement the distributed/encrypted version of the semantics anyway).
-- Instead of sequestering "parallel" vs "secure" computations, the [en|de]cryptedness (and ownership and location) of _values_ is tracked in the type system.
+- Instead of sequestering "parallel" vs "secure" computations, the [en\|de]cryptedness (and ownership and location) of _values_ is tracked in the type system.
 - The formal language is more similar to the vanilla typed lambda calculus.
 - Wysteria doesn't provide a good way for parties to contribute secrets to a computation they don't themselves perform.
 In other words, it's not much good for outsourced-computation. 
