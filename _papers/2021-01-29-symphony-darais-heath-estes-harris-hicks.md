@@ -11,7 +11,7 @@ citation:
   author: "David Darais, David Heath, Ryan Estes, William Harris, & Michael Hicks"
   title: "λ-Symphony: A Concise Language Model for MPC"
   year: "2020"
-  month: "Julya"
+  month: "July"
   where: "University of Vermont, Georgia Institute of Technology, Galois Inc., & University of Maryland"
 ---
 
@@ -20,7 +20,7 @@ The goal of this work is largely the same as Wysteria, to provide a language in 
 There are several differences:
 
 - Symphony is written in Haskell instead of Ocaml. 
-- Symphony is mostly agnostic about the cryptographic primitives with which MPC opperations are carried out. 
+- Symphony is mostly agnostic about the cryptographic primitives with which MPC operations are carried out. 
 The authors seem to assume that one will use GMW or something like it, but claim that any MPC protocol would work
 (and the don't actually implement the distributed/encrypted version of the semantics anyway).
 - Instead of sequestering "parallel" vs "secure" computations, the [en\|de]cryptedness (and ownership and location) of _values_ is tracked in the type system.
