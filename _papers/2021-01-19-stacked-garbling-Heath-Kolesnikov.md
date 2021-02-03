@@ -5,6 +5,7 @@ tags:
   - circuits
   - cryptography
   - papers
+  - garbled-circuits
 citation:
   author: David Heath and Vladimir Kolesnikov
   title: "Stacked Garbling: Garbled Circuit Proportional to Longest Execution Path"
