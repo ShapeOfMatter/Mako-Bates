@@ -34,10 +34,11 @@ Then at runtime, when _A_ knows the real values (`B0`, `B1`) and _B_ knows the r
 > _B_ sends `e = c ⊕ d`.  
 > _A_ sends `x0 = B0 ⊕ Re` and `x1 = B1 ⊕ R(!e)`.
 
-Consider the four cases for `c` and `d` (neither of which are known to _A_) and `e` (which _A_ does know):
+Consider the four cases for `(c, d)` (neither of which are known to _A_) and `e` (which _A_ does know):
 
-- `(0, 0)`: 
+- `(0, 0), 0`: _B_ gets `B0 ⊕ R0` and `B1 ⊕ R1`. Since they already know `R0`, they can figure out `B0` (which is `Bc`), but they can't figure out `B1` because they never learned `R1`.
+- `(0, 1), 1`: _B_ gets `B0 ⊕ R1` and `B1 ⊕ R0`. Since they already know `R1`, they can figure out `B0`, but they can't figure out `B1` because they never learned `R0`.
+- `(1, 0), 1`: _B_ gets `B0 ⊕ R1` and `B1 ⊕ R0`. Since they already know `R0`, they can figure out `B1`, but they can't figure out `B0` because they never learned `R1`.
+- `(1, 1), 0`: _B_ gets `B0 ⊕ R0` and `B1 ⊕ R1`. Since they already know `R1`, they can figure out `B1`, but they can't figure out `B0` because they never learned `R0`.
 
-```psudo-code
-A: (r0, r1) <- $
-A -> 
+This get's used by a variety of later works, including the recent "basically free IF" paper.
