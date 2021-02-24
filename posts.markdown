@@ -2,6 +2,7 @@
 title: Posts
 ---
 
-{% for post in site.posts %}
- + [{{ post.title }}]({{ post.url | relative_url }})
+{% assign posts = site.posts | sort: "date" | reverse %}
+{% for post in posts %}
+ + [{{ post.title }}]({{ post.url | absolute_url }})
 {% endfor %}
