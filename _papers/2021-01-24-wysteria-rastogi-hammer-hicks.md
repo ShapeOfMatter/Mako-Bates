@@ -28,20 +28,20 @@ Wire values are represented in cipher-space as Shamier shares.
 
 Assuming (as is typical) that the circuit is a boolean circuit, `NOT` and `XOR` can be performed without communication.
 Other gates can be performed using oblivious transfer:
-"I know what my share _would_ be for each of your possible shares, so I'll OT to you the one that corrisponds to the shares you actually do have."
+"I know what my share _would_ be for each of your possible shares, so I'll OT to you the one that corresponds to the shares you actually do have."
 (How does that part translate to n parties?)
 
 ### Mixed-mode computation
 
-The biggest contribution of this paper/language is that it's a single language that expresses and comiles to mixed-mode computations.
-A mixed-mode computation is just one that has MPC and paralell un-encrypted steps interleaved. 
+The biggest contribution of this paper/language is that it's a single language that expresses and compiles to mixed-mode computations.
+A mixed-mode computation is just one that has MPC and parallel un-encrypted steps interleaved. 
 The un-encrypted sections are called "parallel" because they're typically performed by several parties (e.g. _all_ the parties) at once in parallel; everyone arrives at the same result/continuation deterministically. 
-Perviously MPC implementations left this interleaving mostly manual, which meant the correctness of that aspec of one's program needed to be checked by hand.
+Previously MPC implementations left this interleaving mostly manual, which meant the correctness of that aspect of one's program needed to be checked by hand.
 Wysteria annotates values/computations with "mode" attributes, and checks rules about the contexts in which any given mode is allowed. 
 
 ### Single-threadedness
 
-Wysteria really has two "implementations", which can be proven to be equivilant. The one intended for actual use compiles down to the needed collection of parallel-step machine code MPC circuits (there's a whole client/server architecture to actually run these programs). The other implementation let's one imagine the system as a monolithic single-threaded computation; this is easier to think through the behavior of, and one can rely on the provided equivilance proofs. 
+Wysteria really has two "implementations", which can be proven to be equivalent. The one intended for actual use compiles down to the needed collection of parallel-step machine code MPC circuits (there's a whole client/server architecture to actually run these programs). The other implementation let's one imagine the system as a monolithic single-threaded computation; this is easier to think through the behavior of, and one can rely on the provided equivalence proofs. 
 
 
 

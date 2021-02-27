@@ -15,11 +15,11 @@ citation:
 ---
 
 A lot's changed in 25 years.
-The paper's entierly readable in a modern context, but everything from the class of applications in which the author is interested, to the choice of fonts, reminds the reader of this foreign context.
+The paper's entirely readable in a modern context, but everything from the class of applications in which the author is interested, to the choice of fonts, reminds the reader of this foreign context.
 The paper is _short_, and half of it is just laying out the theoretical framework within which it's going to describe it's contribution. 
 
 The lasting contribution that's of interest to my work is the ability to do most of the heavy lifting of a 1-of-2 OT in advance (that is, before either party has decided on their inputs to the "real" oblivious transfer). 
-This has obvious performance implecations for, for example, GMW circuit execution. 
+This has obvious performance implications for, for example, GMW circuit execution. 
 (Actually realizing a total speed boost may not be trivial though.)
 
 ### How:
@@ -41,4 +41,4 @@ Consider the four cases for `(c, d)` (neither of which are known to _A_) and `e`
 - `(1, 0), 1`: _B_ gets `B0 ⊕ R1` and `B1 ⊕ R0`. Since they already know `R0`, they can figure out `B1`, but they can't figure out `B0` because they never learned `R1`.
 - `(1, 1), 0`: _B_ gets `B0 ⊕ R0` and `B1 ⊕ R1`. Since they already know `R1`, they can figure out `B1`, but they can't figure out `B0` because they never learned `R0`.
 
-This get's used by a variety of later works, including the recent "basically free IF" paper.
+This gets used by a variety of later works, including the recent "basically free IF" paper.
