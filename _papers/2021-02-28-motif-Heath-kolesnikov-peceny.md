@@ -1,5 +1,5 @@
 ---
-title: MOTIF: Cheap branching in GMW
+title: "MOTIF: Cheap branching in GMW"
 date: 2021-02-28
 tags:
   - GMW
