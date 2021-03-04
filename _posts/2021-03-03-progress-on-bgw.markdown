@@ -1,5 +1,5 @@
 ---
-title: "Notes tangential to the BGW protocol
+title: "Notes tangential to the BGW protocol"
 date: 2021-03-03
 description: "What's going on and how do I think it might be improved"
 ---
