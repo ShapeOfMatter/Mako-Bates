@@ -33,3 +33,13 @@ Remember we're working in the finite field of size two; NOT is negation, XOR is 
 So far this looks like a really good MPC protocol. The computations are cheap and we have information-theoretic security. 
 The problem is that the degree of the polynomial goes up with every AND gate; if _t>p_, then not enough shares exist to recover the secret.
 The solution is to rebuild the polynomial after every AND to reset the degree. 
+
+**Questions:**
+
+- How really does the reliniarization work? I've found conflicting explainations.
+- Can relinearization be done on multi-secret shares? I think the answer is yes, but it's not clear yet. 
+
+I think the key to reliniarization is that reconstruction of a secret is a function of the secret shares
+_that can be represented as a circuit without multiplication_. 
+Therefore if one has a _share_ of each _share_, one can get a share of the "truth".
+This strongly suggests that multiple secrets could be relinearized at once, but I have to actually put together the matrixes in question to do that.
