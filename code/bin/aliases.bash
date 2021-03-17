@@ -29,6 +29,6 @@ function cdls {
 }
 
 function grep_context {
-  grep -C 3 -n "$@"
+  grep -C 3 -n -r --exclude-dir='.venv' --exclude-dir='.mypy_cache' --exclude-dir='.git' --exclude-dir='__pycache__' "$@"
 }
 
