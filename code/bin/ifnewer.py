@@ -76,14 +76,12 @@ found_dest, dest_date = find_youngest(path.join(
 
 command = [apply_placeholders(f, source, found_dest) for f in command_pattern]
 
-print_if_verbose(f"""
-    Source: {source}
+print_if_verbose(f"""    Source: {source}
     Source Last Modified: {source_date}
     Using Destination: {found_dest}
     Destination Last Modified: {dest_date}
     Ask For Confirmation: {confirm}
-    Processed Command: {command}
-""")
+    Processed Command: {command}""")
 
 if dest_date < source_date:
     print_if_verbose("Source file was more recently modified.")
