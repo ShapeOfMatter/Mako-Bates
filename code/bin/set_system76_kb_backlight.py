@@ -23,7 +23,7 @@ Description=Set color and brightness of system-76 laptop keyboard backlight
 
 [Service]
 Type=simple
-ExecStart=systemd-cat /home/username/.local/bin/set_system76_kb_backlight -c FF1100 -B 150
+ExecStart=systemd-cat /home/username/.local/bin/set_system76_kb_backlight -c FF1100 -B 15
 
 [Install]
 WantedBy=multi-user.target
