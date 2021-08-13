@@ -43,6 +43,33 @@ function cdls {
 }
 
 function grep_context {
-  grep -C 3 -n -r --exclude-dir='.venv' --exclude-dir='.mypy_cache' --exclude-dir='.git' --exclude-dir='__pycache__' "$@"
+  grep -C 3 -n -r \
+      --exclude-dir='.venv' \
+      --exclude-dir='.mypy_cache' \
+      --exclude-dir='.git' \
+      --exclude-dir='__pycache__' \
+      --exclude-dir='.stack-work' \
+      "$@"
+}
+
+# activate and de-activate the nord-vpn client
+function nordvpnc {
+    nordvpn disconnect > /dev/null
+    nordvpn set killswitch enabled  # kills internet if vpn fails
+    nordvpn set cybersec enabled  # blacklist DNS lookups. sketchy? interaction with firefox?
+    nordvpn set notify enabled
+    nordvpn set technology NordLynx
+    # NA to Nordlynx?
+    #nordvpn set protocol UDP  # tcp may be more reliable, but slower?
+    #nordvpn set obfuscate disabled  # only relevant for bypassing firewalls.
+    nordvpn connect
+    nordvpn set autoconnect enabled
+}
+function nordvpnd {
+    nordvpn set autoconnect disabled
+    nordvpn disconnect
+    nordvpn set killswitch disabled
+    nordvpn set cybersec disabled
+    #nordvpn set obfuscate disabled
 }
 
