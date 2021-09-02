@@ -67,9 +67,9 @@ function nordvpnc {
 }
 function nordvpnd {
     nordvpn set autoconnect disabled
-    nordvpn disconnect
     nordvpn set killswitch disabled
     nordvpn set cybersec disabled
+    nordvpn disconnect
     #nordvpn set obfuscate disabled
 }
 
