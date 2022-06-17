@@ -1,6 +1,6 @@
 ---
 title: "COMING SOON: Metadata-privacy preserving Instant Messaging"
-date: 2022-07-01
+date: 2022-06-17 12:00:00
 description: "What existing tools for private massaging exist (or could exist) beyond end-to-end encryption?"
 ---
 

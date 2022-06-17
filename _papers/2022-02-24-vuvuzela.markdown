@@ -1,0 +1,80 @@
+---
+title: "Vuvuzela: Scalable Private Messaging Resistant to Traffic Analysis"
+date: 2022-02-24
+tags:
+  - instant_messaging
+  - cryptography
+  - differential_privacy
+citation:
+  author: "Jelle van den Hooff, David Lazar, Matei Zaharia, and Nickolai Zeldovich"
+  title: "Vuvuzela: Scalable Private Messaging Resistant to Traffic Analysis"
+  howpublished: "SOSP’15, Oct. 4–7, 2015, Monterey, California, USA."
+  year: 2015
+  month: October
+  where: "MIT CSAIL, MA, USA"
+---
+
+
+### Summary
+
+All messages are E2EE, so message contents is _a priori_ confidential and authentic.
+
+The protocol is based on "dead drops".
+
+- Basically messages are tagged with a (deterministic random) address.
+- Each round, a given party will send a message to such an address and get back any other message
+  that was send to that same address that round.
+- As far as I can tell, it's undefined what would happen if these addresses collided.
+
+Within that framework, there are three kinds of things an adversary could learn, each with its own protection/mitigation:
+
+1. What users participate each round?
+   - Every user participates every round, sending dummy messages as needed.
+   - All messages are capped/padded to a fixed length. 
+2. Who talks to whom?
+   - Dead-drop addresses are re-randomized each round, based on a secret known to the communicating parties.
+   Thus, the address a party accesses doesn't itself leak any information.
+   - Multiple servers are arranged as a mixnet/daisy-chain/bucket-brigade.
+   Each server independently randomizes the messages it relays
+   (obfuscates which ones came from which source).
+   - Messages are encrypted onion-like for each server, so a single honest server anywhere in the stack suffices.
+3. How many messages are exchanged each round?
+   - Roughly speaking this is an independent concern because of the possibility that the top/innermost server is corrupt.
+   - There are technically two variables to consider here:
+   the number of successful communications and the number of unsuccessful communications.
+   - Cover traffic is added sufficient to provide (ε,δ)-DP on these two variables.
+   - Because only one honest server is assumed, _every_ server must add this much cover traffic independently.
+
+The authors show that this is (somewhat) practical to do, with (somewhat) good performance
+and (reasonably) good values for ε and δ, even over hundreds of thousands of rounds of communication.
+They also claim that the practical depletion-rate of the privacy-budget,
+for users who are publicly known to only participate in a minority of rounds, is much lower than nominal. 
+
+
+### Contributions
+
+Although the system builds on top of very many pre-existing tools, the particular combination/design is novel.
+The authors claim that this is the first performant system to give _good_ differential privacy of communication meta-data
+across many rounds of communication .
+
+They also did an empirical test of the system's performance, and show that, if scaled to millions of users,
+it can reasonably handle not-quite-real-time communication (like emails) for \<$1/user/year. 
+
+
+### Critique
+
+- It is not clear that the system's performance is good enough for real-world use. 
+- The system has a lot of out-of-band stuff ancillary or assumed. 
+- Because the "dialing" process uses a parallel protocol, I think there are actually _four_ variables that need DP.
+  I'm concerned that the authors' accounting of privacy depletion may not be accounting for this correctly.
+
+
+### Open questions
+
+- The addition of cover traffic is a major factor in the system's performance. 
+  The authors discuss some options for improving this by adding assumptions about the existence of honest clients.
+  (What are coupled-world privacy and noiseless database privacy?)
+  I'm also interested in the idea that the two variables for which DP is being applied
+  don't seem to be independent of each other; I suspect a framing with less noise is possible.
+- What's happened since 2015?
+
