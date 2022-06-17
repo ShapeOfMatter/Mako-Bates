@@ -1,6 +1,6 @@
 ---
 title: "COMING SOON: PL Theory for SMPC Implementations"
-date: 2022-06-17 23:00:00
+date: 2022-06-17 13:00:00
 description: "Programming Language(s) for automatic verification of Secure Multi-Party Computation implementations"
 ---
 
