@@ -5,11 +5,13 @@ date: 2021-01-10 12:02:00 -05:00
 
 {% include section.html c="Academic" %}
 
-Mako Bates is currently a graduate assistant in [the PLAID Lab](https://plaid.w3.uvm.edu/) at the University of Vermont.
+Mako Bates is currently a graduate assistant in [the PLAID Lab](https://plaid.w3.uvm.edu/)
+and []() at the University of Vermont.
 He's studying language design, secure multi-party computation, and differential privacy systems.
 On Github he is [ShapeOfMatter](https://github.com/ShapeOfMatter).
 
 **University of Vermont**  
+Graduate Research Assistant  
 Prospective Ph.D. in Computer Science, type-theory, applied cryptography  
 2020 – current
 
