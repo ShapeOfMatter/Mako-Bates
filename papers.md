@@ -7,5 +7,5 @@ They're not organized, they vary is structure and quality, and they're probably 
 
 {% assign posts = site.papers | sort: "date" | reverse %}
 {% for post in posts %}
- + <sub>{{ post.date | date: "%Y-%m-%d" }}</sub> [{{ post.title }}]({{ post.url | absolute_url }})
+ + <span class="inline_small">{{ post.date | date: "%Y-%m-%d" }}</span> [{{ post.title }}]({{ post.url | absolute_url }})
 {% endfor %}
