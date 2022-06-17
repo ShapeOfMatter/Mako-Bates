@@ -1,5 +1,5 @@
 ---
-title: Paper Reviews
+title: Paper Notes
 ---
 
 These are casual summaries, notes about, and in some cases critiques of papers that I've read or used in different contexts.
@@ -7,5 +7,5 @@ They're not organized, they vary is structure and quality, and they're probably 
 
 {% assign posts = site.papers | sort: "date" | reverse %}
 {% for post in posts %}
- + [{{ post.title }}]({{ post.url | absolute_url }})
+ + <sub>{{ page.date | date: "%Y-%m-%d" }}</sub> [{{ post.title }}]({{ post.url | absolute_url }})
 {% endfor %}
