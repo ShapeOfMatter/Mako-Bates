@@ -145,7 +145,7 @@ def set_backlight_or_die(brightness, color, exit):
               for region in color_regions]]
         if key is not None
     }
-    if len(settings) < 2:
+    if len(settings) < 1:
         exit(2, "Unable to find the LED control files.\n")
 
     for (p,s) in settings.items():
