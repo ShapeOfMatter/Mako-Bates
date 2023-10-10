@@ -1,22 +1,22 @@
 ---
 title: Curriculum Vitae
-date: 2021-01-10 12:02:00 -05:00
+date: 2023-10-09 12:02:00 -05:00
 ---
 
 {% include section.html c="Contact" %}
 
-During 2022 and 2023, Mako can be reached at Mako.Bates@uvm.edu .
+During 2023 and 2024, Mako can be reached at Mako.Bates@uvm.edu .
 On Github he is [ShapeOfMatter](https://github.com/ShapeOfMatter).
 
 {% include section.html c="Academic" %}
 
-Mako Bates is currently (2022) a graduate research assistant in [the PLAID Lab](https://plaid.w3.uvm.edu/)
-and [the MaPLE Lab](https://uvm-maple.github.io/about/) at the University of Vermont.
-He's studying language design, secure multi-party computation, and differential privacy systems.
+Mako Bates is currently (2023) a graduate research assistant in [the PLAID Lab](https://plaid.w3.uvm.edu/)
+at the University of Vermont.
+He's studying secure multi-party computation, differential privacy systems, and language design.
 
 **University of Vermont**  
 Graduate Research Assistant  
-Prospective Ph.D. in Computer Science, type-theory, applied cryptography  
+Ph.D. Candidate in Computer Science, type-theory, applied cryptography  
 2020 – current
 
 **University of Southern Maine**  
