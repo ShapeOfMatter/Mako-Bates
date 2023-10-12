@@ -7,6 +7,9 @@ date: 2023-10-09 12:02:00 -05:00
 
 During 2023 and 2024, Mako can be reached at Mako.Bates@uvm.edu .
 On Github he is [ShapeOfMatter](https://github.com/ShapeOfMatter).
+He's somewhat active on [StackExchange](https://stackexchange.com/users/13621214/shapeofmatter?tab=accounts),
+especially [StackOverflow](https://stackoverflow.com/users/10135377/shapeofmatter)
+and [CodeReview](https://codereview.stackexchange.com/users/200133/shapeofmatter).
 
 {% include section.html c="Academic" %}
 
