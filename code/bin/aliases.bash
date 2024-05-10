@@ -49,6 +49,7 @@ function grep_context {
       --exclude-dir='.git' \
       --exclude-dir='__pycache__' \
       --exclude-dir='.stack-work' \
+      --exclude-dir='dist-newstyle' \
       "$@"
 }
 
