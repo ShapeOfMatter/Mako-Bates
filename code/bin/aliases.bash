@@ -5,6 +5,13 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# set PATH so it includes TexLive
+if [ -d "/usr/local/texlive/2024/bin/x86_64-linux" ] ; then
+    PATH="/usr/local/texlive/2024/bin/x86_64-linux:$PATH"
+    MANPATH="/usr/local/texlive/2024/texmf-dist/doc/man:$MANPATH"
+    INFOPATH="/usr/local/texlive/2024/texmf-dist/doc/info:$INFOPATH"
+fi
+
 # quickly check if a program is still running
 function grep_ps {
   ps ax o"cmd,user,pid" | grep "$1" | grep --invert-match "^grep "
@@ -50,6 +57,8 @@ function grep_context {
       --exclude-dir='__pycache__' \
       --exclude-dir='.stack-work' \
       --exclude-dir='dist-newstyle' \
+      --exclude-dir='target/debug' \
+      --exclude='Cargo.lock' \
       "$@"
 }
 
