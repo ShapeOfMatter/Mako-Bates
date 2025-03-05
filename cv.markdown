@@ -5,17 +5,16 @@ date: 2023-10-09 12:02:00 -05:00
 
 {% include section.html c="Contact" %}
 
-During 2023 and 2024, Mako can be reached at Mako.Bates@uvm.edu .
+During 2025, Mako can be reached at Mako.Bates@uvm.edu.
 On Github he is [ShapeOfMatter](https://github.com/ShapeOfMatter).
-He's somewhat active on [StackExchange](https://stackexchange.com/users/13621214/shapeofmatter?tab=accounts),
-especially [StackOverflow](https://stackoverflow.com/users/10135377/shapeofmatter)
-and [CodeReview](https://codereview.stackexchange.com/users/200133/shapeofmatter).
+He's somewhat active on [StackExchange](https://stackexchange.com/users/13621214/shapeofmatter?tab=accounts).
 
 {% include section.html c="Academic" %}
 
-Mako Bates is currently (2023) a graduate research assistant in [the PLAID Lab](https://plaid.w3.uvm.edu/)
-at the University of Vermont.
-He's studying secure multi-party computation, differential privacy systems, and language design.
+Mako Bates is currently (2025) a PhD candidate
+at the University of Vermont;
+he'll be defending his thesis on choreographic programming in June.
+He's also studying secure multi-party computation, differential privacy systems, and language design.
 
 **University of Vermont**  
 Graduate Research Assistant  
@@ -25,6 +24,21 @@ Ph.D. Candidate in Computer Science, type-theory, applied cryptography
 **University of Southern Maine**  
 Bachelor’s in Electrical, Electronics, and Computer Engineering  
 2010 – 2014
+
+{% include section.html c="Links" %}
+
+_Efficient, Portable, Census-Polymorphic Choreographic Programming._
+with Shun Kashiwa, Syed Jafri, Gan Shen, Lindsey Kuper, and Joseph Near,
+submitted to PLDI25.  
+[arXiv:2412.02107 \[cs.PL\]](https://arxiv.org/abs/2412.02107)
+
+_MultiChor: Type-safe and efficient choreographies with location-set polymorphism._  
+A Haskell package available on [Hackage](https://hackage.haskell.org/package/MultiChor).
+
+_We Know I Know You Know; Choreographic Programming With Multicast and Multiply Located Values._
+with Joeseph Near,
+CP24 Workshop, 2024, Copenhagen.  
+[YouTube](https://www.youtube.com/watch?v=mnjhUZM4krU)
 
 {% include section.html c="Industry" %}
 
