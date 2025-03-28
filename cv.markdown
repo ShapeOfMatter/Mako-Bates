@@ -11,9 +11,9 @@ He's somewhat active on [StackExchange](https://stackexchange.com/users/13621214
 
 {% include section.html c="Academic" %}
 
-Mako Bates is currently (2025) a PhD candidate
+Mako Bates is a PhD candidate
 at the University of Vermont;
-he'll be defending his thesis on choreographic programming in June.
+he'll be defending his thesis on choreographic programming in June of 2025.
 He's also studying secure multi-party computation, differential privacy systems, and language design.
 
 **University of Vermont**  
@@ -28,8 +28,8 @@ Bachelor’s in Electrical, Electronics, and Computer Engineering
 {% include section.html c="Links" %}
 
 _Efficient, Portable, Census-Polymorphic Choreographic Programming._
-with Shun Kashiwa, Syed Jafri, Gan Shen, Lindsey Kuper, and Joseph Near,
-submitted to PLDI25.  
+with Shun Kashiwa, Syed Jafri, Gan Shen, Lindsey Kuper, and Joseph Near,  
+**accepted to PLDI25**.  
 [arXiv:2412.02107 \[cs.PL\]](https://arxiv.org/abs/2412.02107)
 
 _MultiChor: Type-safe and efficient choreographies with location-set polymorphism._  
