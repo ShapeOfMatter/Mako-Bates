@@ -58,6 +58,7 @@ function grep_context {
       --exclude-dir='.stack-work' \
       --exclude-dir='dist-newstyle' \
       --exclude-dir='target/debug' \
+      --exclude-dir='node_modules' \
       --exclude='Cargo.lock' \
       "$@"
 }
