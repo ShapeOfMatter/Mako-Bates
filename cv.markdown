@@ -7,38 +7,54 @@ date: 2023-10-09 12:02:00 -05:00
 
 During 2025, Mako can be reached at Mako.Bates@uvm.edu.
 On Github he is [ShapeOfMatter](https://github.com/ShapeOfMatter).
-He's somewhat active on [StackExchange](https://stackexchange.com/users/13621214/shapeofmatter?tab=accounts).
 
 {% include section.html c="Academic" %}
 
-Mako Bates is a PhD candidate
-at the University of Vermont;
-he'll be defending his thesis on choreographic programming in June of 2025.
-He's also studying secure multi-party computation, differential privacy systems, and language design.
+Mako Bates defended [his dissertation](https://scholarworks.uvm.edu/graddis/2101),
+on particular techniques for choreographic programming,
+in June of 2025,
+and is continuing to work with the UVM team as a postdoc through the fall.
+During his PhD, he also worked on secure multi-party computation, differential privacy systems, and language design.
 
 **University of Vermont**  
-Graduate Research Assistant  
-Ph.D. Candidate in Computer Science, type-theory, applied cryptography  
-2020 – current
+Ph.D. in Computer Science  
+2020 – 2025
 
 **University of Southern Maine**  
-Bachelor’s in Electrical, Electronics, and Computer Engineering  
+Bachelor’s in Electrical, Electronics, and Computer Engineering and Sociology  
 2010 – 2014
 
 {% include section.html c="Links" %}
 
-_Efficient, Portable, Census-Polymorphic Choreographic Programming._
+_Efficient, Portable, Census-Polymorphic Choreographic Programming._  
 with Shun Kashiwa, Syed Jafri, Gan Shen, Lindsey Kuper, and Joseph Near,  
-**accepted to PLDI25**.  
-[arXiv:2412.02107 \[cs.PL\]](https://arxiv.org/abs/2412.02107)
+**[presented at PLDI25](https://www.youtube.com/live/YhXlZp45HLs?t=23925s)**.  
+[proceedings version](https://doi.org/10.1145/3729296)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[author version](https://arxiv.org/abs/2412.02107)  
+- Cutting edge contributions to the theory and implementation of library-level choreographic programming.
+- Formalized and implemented novel techniques for programming concurrent protocols.
+- Led a team of six researchers in coalescing related findings into a coherent paper.
 
 _MultiChor: Type-safe and efficient choreographies with location-set polymorphism._  
-A Haskell package available on [Hackage](https://hackage.haskell.org/package/MultiChor).
+The Haskell package from the above paper, available on [Hackage](https://hackage.haskell.org/package/MultiChor).
+
+_SoK: Usability Studies in Differential Privacy._  
+Onyinye Dibia, Prianka Bhattacharjee, Brad Stenger, Steven Baldasty, Mako Bates, Ivoline Ngong, Yuanyuan Feng, and Joseph Near,  
+[Published in PoPETs 2025](https://doi.org/10.56553/popets-2025-0162)  
+- A Systematization-of-Knowledge paper on the usability of, and communication about, differential privacy.
+- Synthesizes insights from studies on both the practical use of DP tools
+  and strategies for communicating to practitioners and end-users about DP parameters.
 
 _We Know I Know You Know; Choreographic Programming With Multicast and Multiply Located Values._
-with Joeseph Near,
 CP24 Workshop, 2024, Copenhagen.  
 [YouTube](https://www.youtube.com/watch?v=mnjhUZM4krU)
+
+_DT-SIM: Property-Based Testing for MPC Security._  
+with Joe Near,  
+under review by _Digital Threats: Research and Practice_.
+[\[pre-print\]](https://doi.org/10.48550/arXiv.2403.04991)  
+Demonstrates that property-based testing can be effective for detecting security bugs in secure protocols.
 
 {% include section.html c="Industry" %}
 
