@@ -60,6 +60,7 @@ function grep_context {
       --exclude-dir='target/debug' \
       --exclude-dir='node_modules' \
       --exclude-dir='.lake' \
+      --exclude-dir='.daml' \
       --exclude='Cargo.lock' \
       "$@"
 }
